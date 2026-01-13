@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "Pro Flan Sender"
+   },
+   "background": {
+      "service_worker": "js/probcg.js"
+   },
+   "content_scripts": [ {
+      "css": [ "css/driver.css", "css/procntt.css" ],
+      "js": [ "js/library/jquery.js", "js/library/driver.js.iife.js", "js/prodata.js", "js/ga-code.js", "js/protsrt.js", "js/driver.js", "js/promsg.js", "js/procntt.js" ],
+      "matches": [ "*://web.whatsapp.com/*" ]
+   }],
+   "default_locale": "es",
+   "description": "__MSG_Description__",
+   "icons": {
+      "128": "logo/pro-large.png",
+      "16": "logo/pro-small.png",
+      "48": "logo/pro-medium.png"
+   },
+   "manifest_version": 3,
+   "name": "Pro Flan Sender",
+   "permissions": [ "bookmarks", "storage", "unlimitedStorage", "tabs" ],
+   "version": "1.1.9",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "/js/proinjt.js", "/logo/*" ]
+   } ]
+}
